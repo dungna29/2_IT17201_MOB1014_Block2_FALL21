@@ -5,6 +5,8 @@
  */
 package BAI_3_VONGLAP;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Dungna89
@@ -76,5 +78,18 @@ public class B1_VONGLAP {
       Bài 1: Cho người dùng nhập vào 1 bảng cửu chương sau đó in ra. (2 cách for và While).
       Bài 2: In bảng cửu chương theo khoảng người dùng nhập vào.
     */
+    Scanner sc = new Scanner(System.in);
+    while (true) {      
+      int khoang1, khoang2;
+      System.out.print("Mời bạn nhập vào khoảng 1: ");
+      khoang1 = Integer.parseInt(sc.nextLine());
+      System.out.print("Mời bạn nhập vào khoảng 2: ");
+      khoang2 = Integer.parseInt(sc.nextLine());
+      for (int j = Integer.min(khoang1, khoang2); j <= Integer.max(khoang1, khoang2); j++) {
+        for (int k = 1; k <= 9; k++) {
+          System.out.printf("%d x %d = %d \n", j, k, j * k);
+        }
+      }
+    }
   }
 }
