@@ -73,13 +73,13 @@ public class B1_VONGLAP {
       System.out.println("Chào các bạn");
       i++;
     } while (i < 3);
-    
+
     /*
       Bài 1: Cho người dùng nhập vào 1 bảng cửu chương sau đó in ra. (2 cách for và While).
       Bài 2: In bảng cửu chương theo khoảng người dùng nhập vào.
-    */
+     */
     Scanner sc = new Scanner(System.in);
-    while (true) {      
+    while (true) {
       int khoang1, khoang2;
       System.out.print("Mời bạn nhập vào khoảng 1: ");
       khoang1 = Integer.parseInt(sc.nextLine());
