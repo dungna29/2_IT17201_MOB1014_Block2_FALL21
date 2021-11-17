@@ -5,6 +5,8 @@
  */
 package BAI_4_Array_ArrayList_List;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Dungna89
@@ -13,6 +15,7 @@ public class B3_ThuatToanNoiBot_BubbleSort {
 
   public static void main(String[] args) {
     int[] arrNumber = {8, 7, 6, 5};
+
     for (int x : arrNumber) {
       System.out.print(x + " ");
     }
