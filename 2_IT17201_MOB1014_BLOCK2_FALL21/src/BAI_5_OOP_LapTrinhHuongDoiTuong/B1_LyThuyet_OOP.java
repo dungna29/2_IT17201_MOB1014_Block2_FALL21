@@ -70,7 +70,7 @@ public class B1_LyThuyet_OOP {
   
   /*
   Bài tập
-  Tạo 10 đối tượng và:
+  Tạo 10 đối tượng đầy đủ 4 thành phầm và tập gọi nó ở trên main thông qua Contructor có tham số và không tham số:
 1.	Nguoi(Ten,Tuoi,Sdt,DiaChi,NgaySinh,QueQuan,TrinhDo)
 2.	Meo(Ten,Tuoi,DiaChi,GioiTinh,NgaySinh)
 3.	GiaoVien(Ten,TenDem,HoTen,MaGV,Email1,Email2,Sdt,SoGioDay,ChucVu)
