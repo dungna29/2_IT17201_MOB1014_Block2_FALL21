@@ -16,6 +16,8 @@ public class Main {
   public static void main(String[] args) {
     //Code Menu ở đây
     Scanner sc = new Scanner(System.in);
+    SinhVienService svs = new SinhVienService();//Gọi chức năng sang
+    
     do {      
       String input;
       System.out.println("Quản lý mảng sinh viên");
@@ -27,15 +29,20 @@ public class Main {
       System.out.println("Mời bạn chọn chức năng: ");
       input = sc.nextLine();
       switch (input) {
-        case "1":          
+        case "1":       
+          svs.themSV();
           break;
-        case "2":          
+        case "2":    
+          svs.suaSV();
           break;
-        case "3":          
+        case "3": 
+          svs.xoaSV();
           break;
-        case "4":          
+        case "4":    
+          svs.timKiemSV();
           break;
-        case "5":          
+        case "5":    
+          svs.xuatDsSV();
           break;
         default:
           System.out.println("Chức năng không tồn tại");
