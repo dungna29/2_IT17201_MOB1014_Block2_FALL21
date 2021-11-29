@@ -91,7 +91,7 @@ public class SinhVienService {//Code toàn bộ các chức năng ở đây
     System.out.println("Mã sinh viên bạn chọn không tìm thấy");
   }
 
-  public void xuatDsSV() {
+  public void xuatDsSV() {//getLstSinhVien
 //    for (SinhVien x : _arrSinhViens) {
 //      x.inRaManHinh();
 //    }
