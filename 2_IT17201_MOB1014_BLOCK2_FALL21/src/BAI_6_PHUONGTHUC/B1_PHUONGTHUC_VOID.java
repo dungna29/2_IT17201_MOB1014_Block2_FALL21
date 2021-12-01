@@ -38,7 +38,16 @@ public class B1_PHUONGTHUC_VOID {
   Scanner sc = new Scanner(System.in);
 
   public static void main(String[] args) {
-
+    //Phần 1: Để sử dụng được phương thức thì phải biết tên phương thức, Kiểu phương thức và phương thức đó nằm trong Class nào.
+    B1_PHUONGTHUC_VOID b1 = new B1_PHUONGTHUC_VOID();
+    // b1.tinhTong; Cách gọi phương thức sai
+    b1.tinhTong();//Kết thúc phương thức phải là dấu ();
+    
+    //Phần 2: Phương thức có tham số thì cần truyền đủ, theo thứ tự, đúng kiểu dữ liệu.
+    //b1.tinhTongF(); Sai vì không truyền đủ tham số hoặc thiếu
+    
+    //Đối với nạp chồng số lượng tham số sẽ quyết định gọi vào phương thức nào.
+    b1.tinhTongF(5, 5, 5);
   }
 
   //Phần 1: Phương thức không trả về không tham số
