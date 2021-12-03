@@ -34,7 +34,17 @@ public class SinhVienService {
     _sv = new SinhVien(2, "Hoàng", "2002");
     _lstSinhViens.add(_sv);
   }
+  /////////////////////////////
 
+  public void themVoToiVa() {
+    int i = 1;
+    while (!(i == 0)) {
+      _lstSinhViens.add(new SinhVien(Integer.parseInt(getInputValue("Id")), getInputValue("tên"), getInputValue("năm sinh")));
+      i = Integer.parseInt(getInputValue(" tiếp hoặc không? 1-Có || 0 - không"));
+    }
+  }
+
+  //////////////////////////////
   public void themSV() {
     _input = getInputValue("số lượng");
     for (int i = 0; i < Integer.parseInt(_input); i++) {
@@ -103,5 +113,31 @@ public class SinhVienService {
       }
     }
     return -1;
+  }
+  public int getIndexById(String id) {
+    for (int i = 0; i < _lstSinhViens.size(); i++) {
+      if (_lstSinhViens.get(i).getId() == Integer.parseInt(id)) {
+        return i;
+      }
+    }
+    return -1;
+  }
+ 
+
+  public void getYears() {
+    int[] temp = getAllYears(new int[2022 - 1900], 1900, 0);
+    for (int i : temp) {
+      System.out.println(i);
+    }
+  }
+
+  public int[] getAllYears(int[] arrYears, int temp, int i) {
+    if (i < arrYears.length) {
+      arrYears[i] = temp;
+      temp++;
+      i++;
+      getAllYears(arrYears, temp, i);
+    }
+    return arrYears;
   }
 }

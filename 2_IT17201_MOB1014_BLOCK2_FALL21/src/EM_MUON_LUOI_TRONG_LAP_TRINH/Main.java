@@ -19,6 +19,7 @@ public class Main {
     //Code Menu ở đây
     Scanner sc = new Scanner(System.in);
     SinhVienService svs = new SinhVienService();//Gọi chức năng sang    
+    svs.getYears();
     do {      
       String input;
       System.out.println("Quản lý mảng sinh viên");
